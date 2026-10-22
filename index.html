@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的项目文档</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <style>
+        section.cover {
+            /* 使用原图的渐变风格，加上 !important 压制默认的白色 */
+            background: linear-gradient(135deg, #fbc2eb 0%, #e6e9f0 50%, #a1c4fd 100%) !important;
+            background-size: cover !important;
+        }
+            /* 控制封面图片的大小 */
+        section.cover img {
+                max-width: 120px !important;
+                margin-bottom: 20px;
+            }
+       
+    </style>
+       
+
+       
+    <!-- 只保留这一行官方的主题 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css">
+</head>
+<body>
+    <div id="app">加载中...</div>
+
+    <script>
+        window.$docsify = {
+        //name: '我的项目文档',
+        coverpage: true,      // 开启全屏封面
+        loadSidebar: true,   // 开启侧边栏
+        onlyCover: true,
+        subMaxLevel: 3,
+        }
+    
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+</body>
+</html>
